@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Tourism 2026: More Heart, Better Data — Paryatan Analytics</title>
+<meta name="description" content="If we don't use data to understand shifts in Indian tourism, we aren't just losing numbers — we're losing the chance to serve our guests better."/>
+<meta name="keywords" content="India tourism 2026, tourism data, hospitality analytics, Paryatan Analytics, Dibyendu Shaw, National Tourism Policy"/>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4JBG19JB1H"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-4JBG19JB1H');</script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--gold:#C9A84C;--gold-light:#E8C96A;--navy:#0D1B2A;--navy-soft:#1E3047;--cream:#F5F0E8;--cream-dim:#EAE4D8;--teal:#1A8C7A;--teal-light:#22B59A;--text:#0D1B2A;--muted:#5A6A7A;--white:#FFFFFF;--fh:'Playfair Display',Georgia,serif;--fb:'DM Sans',system-ui,sans-serif}
+html{scroll-behavior:smooth}
+body{font-family:var(--fb);color:var(--text);background:var(--white);overflow-x:hidden}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(13,27,42,0.97);backdrop-filter:blur(10px);padding:0 5%;display:flex;align-items:center;justify-content:space-between;height:68px;border-bottom:1px solid rgba(201,168,76,0.2)}
+.nav-logo{font-family:var(--fh);font-size:20px;color:var(--gold);display:flex;align-items:center;gap:8px;text-decoration:none}
+.nav-sub{font-size:11px;color:rgba(255,255,255,0.35);letter-spacing:1.5px;border-left:1px solid rgba(255,255,255,0.12);padding-left:10px;font-family:var(--fb)}
+.nav-back{color:rgba(255,255,255,0.6);font-size:14px;text-decoration:none;display:flex;align-items:center;gap:6px;transition:color 0.2s}
+.nav-back:hover{color:var(--gold)}
+.nav-cta{background:var(--gold);color:var(--navy);padding:9px 22px;border-radius:4px;font-size:13px;font-weight:500;text-decoration:none;transition:background 0.2s}
+.nav-cta:hover{background:var(--gold-light)}
+
+/* HERO */
+.article-hero{background:var(--navy);padding:120px 5% 72px;position:relative;overflow:hidden}
+.article-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 80% 40%,rgba(26,140,122,0.12),transparent 60%),radial-gradient(ellipse 50% 60% at 10% 80%,rgba(201,168,76,0.07),transparent 60%)}
+.article-hero-inner{position:relative;z-index:1;max-width:760px;margin:0 auto}
+.article-category{display:inline-flex;align-items:center;gap:8px;background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.25);color:var(--gold);padding:6px 14px;border-radius:20px;font-size:11px;font-weight:500;letter-spacing:1px;text-transform:uppercase;margin-bottom:24px}
+.article-hero h1{font-family:var(--fh);font-size:clamp(32px,5vw,54px);line-height:1.15;color:var(--white);font-weight:700;margin-bottom:20px}
+.article-meta{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.meta-author{display:flex;align-items:center;gap:10px}
+.author-avatar{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--navy-soft),var(--teal));display:flex;align-items:center;justify-content:center;font-family:var(--fh);font-size:14px;font-weight:700;color:var(--gold);border:2px solid rgba(201,168,76,0.3);flex-shrink:0}
+.author-name{font-size:14px;color:rgba(255,255,255,0.8);font-weight:500}
+.author-title{font-size:11px;color:rgba(255,255,255,0.4);margin-top:2px}
+.meta-divider{width:1px;height:32px;background:rgba(255,255,255,0.1)}
+.meta-info{font-size:12px;color:rgba(255,255,255,0.4)}
+
+/* ARTICLE BODY */
+.article-wrap{max-width:760px;margin:0 auto;padding:64px 5%}
+.article-body p{font-size:17px;line-height:1.9;color:#2D3748;margin-bottom:28px;font-weight:300}
+.article-body p strong{color:var(--navy);font-weight:500}
+.article-lead{font-size:20px !important;line-height:1.75 !important;color:var(--navy) !important;font-weight:400 !important;border-left:3px solid var(--gold);padding-left:20px;margin-bottom:36px !important}
+.article-highlight{background:var(--cream);border-radius:12px;padding:28px 32px;margin:36px 0;border-left:4px solid var(--teal)}
+.article-highlight p{font-size:18px !important;line-height:1.75 !important;color:var(--navy) !important;font-weight:400 !important;margin-bottom:0 !important;font-style:italic}
+.article-highlight p::before{content:'"';font-family:var(--fh);font-size:48px;color:var(--teal);line-height:0;vertical-align:-18px;margin-right:4px}
+.article-question{background:var(--navy);border-radius:12px;padding:28px 32px;margin:36px 0;text-align:center}
+.article-question p{font-size:18px !important;line-height:1.7 !important;color:var(--white) !important;font-weight:400 !important;margin-bottom:0 !important;font-family:var(--fh)}
+.article-tags{display:flex;flex-wrap:wrap;gap:10px;margin:48px 0 0}
+.tag{background:rgba(26,140,122,0.08);color:var(--teal);font-size:12px;font-weight:500;padding:6px 14px;border-radius:20px;border:1px solid rgba(26,140,122,0.15)}
+
+/* DIVIDER */
+.article-divider{border:none;border-top:1px solid rgba(0,0,0,0.07);margin:48px 0}
+
+/* AUTHOR BOX */
+.author-box{background:var(--cream);border-radius:16px;padding:32px;display:flex;gap:24px;align-items:flex-start;margin-top:48px}
+.author-box-avatar{width:72px;height:72px;border-radius:50%;background:linear-gradient(135deg,var(--navy),var(--navy-soft));display:flex;align-items:center;justify-content:center;font-family:var(--fh);font-size:24px;font-weight:700;color:var(--gold);border:3px solid var(--gold);flex-shrink:0}
+.author-box h4{font-family:var(--fh);font-size:20px;font-weight:600;color:var(--navy);margin-bottom:4px}
+.author-box .role{font-size:13px;color:var(--teal);font-weight:500;margin-bottom:10px}
+.author-box p{font-size:14px;color:var(--muted);line-height:1.7}
+.author-links{display:flex;gap:12px;margin-top:14px}
+.author-link{font-size:12px;color:var(--teal);text-decoration:none;font-weight:500;border:1px solid rgba(26,140,122,0.25);padding:5px 12px;border-radius:20px;transition:all 0.2s}
+.author-link:hover{background:var(--teal);color:var(--white)}
+
+/* MORE ARTICLES */
+.more-section{background:var(--cream);padding:64px 5%}
+.more-inner{max-width:760px;margin:0 auto}
+.more-section h3{font-family:var(--fh);font-size:26px;font-weight:600;color:var(--navy);margin-bottom:24px}
+.coming-card{background:var(--white);border:1px solid rgba(0,0,0,0.06);border-radius:12px;padding:24px;display:flex;gap:16px;align-items:center;transition:all 0.2s}
+.coming-card:hover{border-color:var(--gold);box-shadow:0 4px 16px rgba(201,168,76,0.1)}
+.coming-icon{font-size:28px;width:52px;text-align:center;flex-shrink:0}
+.coming-card h4{font-family:var(--fh);font-size:16px;font-weight:600;color:var(--navy);margin-bottom:4px}
+.coming-card p{font-size:13px;color:var(--muted)}
+.coming-badge{display:inline-block;background:rgba(26,140,122,0.08);color:var(--teal);font-size:10px;font-weight:500;letter-spacing:1px;text-transform:uppercase;padding:3px 8px;border-radius:4px;margin-top:6px}
+
+/* CTA */
+.cta-section{background:var(--navy);padding:64px 5%;text-align:center}
+.cta-section h3{font-family:var(--fh);font-size:32px;color:var(--white);font-weight:700;margin-bottom:12px}
+.cta-section p{font-size:16px;color:rgba(255,255,255,0.5);margin-bottom:32px}
+.btn-gold{background:var(--gold);color:var(--navy);padding:14px 32px;border-radius:4px;font-size:15px;font-weight:500;text-decoration:none;transition:all 0.2s;display:inline-block}
+.btn-gold:hover{background:var(--gold-light);transform:translateY(-1px)}
+
+/* FOOTER */
+footer{background:#060f18;padding:28px 5%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;border-top:1px solid rgba(255,255,255,0.05)}
+.footer-logo{font-family:var(--fh);font-size:17px;color:var(--gold)}
+.footer-copy{font-size:12px;color:rgba(255,255,255,0.2)}
+
+@media(max-width:768px){
+  .author-box{flex-direction:column}
+  .article-hero{padding:100px 5% 52px}
+  .meta-divider{display:none}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">Paryatan Analytics <span class="nav-sub">पर्यटन</span></a>
+  <a href="index.html#blog" class="nav-back">← Back to Blog</a>
+  <a href="index.html#contact" class="nav-cta">Get in Touch</a>
+</nav>
+
+<!-- ARTICLE HERO -->
+<div class="article-hero">
+  <div class="article-hero-inner">
+    <div class="article-category">✍️ Article · Tourism Insights</div>
+    <h1>Tourism 2026: More Heart, Better Data</h1>
+    <div class="article-meta">
+      <div class="meta-author">
+        <div class="author-avatar">DS</div>
+        <div>
+          <div class="author-name">Dibyendu Shaw</div>
+          <div class="author-title">Founder, Paryatan Analytics · Kolkata</div>
+        </div>
+      </div>
+      <div class="meta-divider"></div>
+      <div class="meta-info">📅 2025 &nbsp;·&nbsp; ⏱️ 4 min read &nbsp;·&nbsp; 🏷️ Tourism · Data · Hospitality</div>
+    </div>
+  </div>
+</div>
+
+<!-- ARTICLE BODY -->
+<div class="article-wrap">
+  <div class="article-body">
+
+    <p class="article-lead">If you've ever worked a double shift in a hotel or managed a tour during peak season, you know that "hospitality" is often just organized chaos.</p>
+
+    <p>We guess when the next rush will come. We guess which room rate will "feel" right for the weekend. We guess which menu item is actually making us money.</p>
+
+    <div class="article-highlight">
+      <p>Our hearts are in the right place, but our math is often missing.</p>
+    </div>
+
+    <p>When I transitioned from the hospitality floor to building Paryatan Analytics, I realized something profound. I was reading about the <strong>National Tourism Policy 2026</strong> updates this week. The government is pushing hard on <strong>"Data-Driven Tourism"</strong> and upskilling through Mission Karmayogi.</p>
+
+    <p>It's a signal to all of us — the Indian traveler isn't just looking for a bed anymore. They're looking for a story. Whether it's a quiet retreat in the hills or a deep dive into Kolkata's heritage, they want experiences that feel personal.</p>
+
+    <p>If we don't use data to understand these shifts, we aren't just losing numbers — we're losing the chance to serve our guests better.</p>
+
+    <div class="article-highlight">
+      <p>The biggest lesson I've learned isn't about complex AI. It's about clarity. It's about turning a messy spreadsheet into a simple dashboard that says, "Hey, look here — this is where your business is actually growing."</p>
+    </div>
+
+    <p>That's what Paryatan Analytics is all about. Not fancy algorithms or complex models — just clear, honest insights that help India's tourism and hospitality businesses make better decisions every day.</p>
+
+    <div class="article-question">
+      <p>Are you still running your business on a "hunch," or are you ready to see what your data is trying to tell you?</p>
+    </div>
+
+    <div class="article-tags">
+      <span class="tag">#ParyatanAnalytics</span>
+      <span class="tag">#HospitalityLife</span>
+      <span class="tag">#IndiaTourism</span>
+      <span class="tag">#DataWithSoul</span>
+      <span class="tag">#KolkataBusiness</span>
+      <span class="tag">#Tourism2026</span>
+    </div>
+
+    <hr class="article-divider"/>
+
+    <!-- AUTHOR BOX -->
+    <div class="author-box">
+      <div class="author-box-avatar">DS</div>
+      <div>
+        <h4>Dibyendu Shaw</h4>
+        <div class="role">Founder, Paryatan Analytics</div>
+        <p>Tourism data analyst and hospitality professional based in Kolkata. Passionate about helping India's travel and hospitality businesses grow through the power of clear, honest data.</p>
+        <div class="author-links">
+          <a href="https://linkedin.com/in/dibyendushaw" class="author-link" target="_blank">LinkedIn</a>
+          <a href="https://github.com/Dibyendu-shaw" class="author-link" target="_blank">GitHub</a>
+          <a href="index.html#contact" class="author-link">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- MORE ARTICLES -->
+<div class="more-section">
+  <div class="more-inner">
+    <h3>More from Paryatan Blog</h3>
+    <div style="display:flex;flex-direction:column;gap:16px">
+      <div class="coming-card">
+        <div class="coming-icon">📊</div>
+        <div>
+          <h4>Building a Hotel Revenue Dashboard in Excel</h4>
+          <p>Step-by-step guide to tracking occupancy, ADR, and RevPAR using Pivot Tables and dynamic charts.</p>
+          <span class="coming-badge">Coming Soon</span>
+        </div>
+      </div>
+      <div class="coming-card">
+        <div class="coming-icon">🏖️</div>
+        <div>
+          <h4>Top 5 KPIs Every Tour Operator Should Track in 2025</h4>
+          <p>The essential metrics that separate profitable tour operators from those leaving money on the table.</p>
+          <span class="coming-badge">Coming Soon</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="cta-section">
+  <h3>Want Data Clarity for Your Business?</h3>
+  <p>Let's talk about what your data is trying to tell you — free consultation, no strings attached.</p>
+  <a href="index.html#contact" class="btn-gold">Get in Touch</a>
+</div>
+
+<footer>
+  <div class="footer-logo">Paryatan Analytics</div>
+  <div class="footer-copy">© 2025 Dibyendu Shaw · Kolkata, India</div>
+</footer>
+
+</body>
+</html>
