@@ -163,25 +163,16 @@ footer{background:#060f18;padding:48px 5% 28px;border-top:1px solid rgba(255,255
 .footer-hindi{font-size:12px;color:rgba(201,168,76,0.35)}
 @media(max-width:768px){.hero-inner,.problem-grid,.why-grid,.contact-inner{grid-template-columns:1fr}.process-steps{grid-template-columns:1fr 1fr;gap:32px}.process-steps::before{display:none}.footer-top{grid-template-columns:1fr 1fr}.nav-links{display:none}.form-row{grid-template-columns:1fr}}
 
-/* ANIMATIONS */
-@keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
-@keyframes fadeInLeft{from{opacity:0;transform:translateX(-40px)}to{opacity:1;transform:translateX(0)}}
-@keyframes fadeInRight{from{opacity:0;transform:translateX(40px)}to{opacity:1;transform:translateX(0)}}
-@keyframes countUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
-.anim-fade-up{opacity:0;transform:translateY(30px);transition:opacity 0.7s ease,transform 0.7s ease}
-.anim-fade-left{opacity:0;transform:translateX(-40px);transition:opacity 0.7s ease,transform 0.7s ease}
-.anim-fade-right{opacity:0;transform:translateX(40px);transition:opacity 0.7s ease,transform 0.7s ease}
-.anim-visible{opacity:1 !important;transform:none !important}
-.hero-content-wrap{animation:fadeInLeft 0.9s ease forwards}
-.hero-right .hero-stat-card:nth-child(1){animation:fadeInRight 0.7s ease 0.2s both}
-.hero-right .hero-stat-card:nth-child(2){animation:fadeInRight 0.7s ease 0.4s both}
-.hero-right .hero-stat-card:nth-child(3){animation:fadeInRight 0.7s ease 0.6s both}
-.trust-item{opacity:0;animation:fadeInUp 0.5s ease forwards}
-.trust-item:nth-child(1){animation-delay:0.1s}
-.trust-item:nth-child(2){animation-delay:0.2s}
-.trust-item:nth-child(3){animation-delay:0.3s}
-.trust-item:nth-child(4){animation-delay:0.4s}
-.trust-item:nth-child(5){animation-delay:0.5s}
+/* SCROLL ANIMATIONS */
+.reveal{opacity:0;transform:translateY(32px);transition:opacity 0.7s ease,transform 0.7s ease}
+.reveal.reveal-left{transform:translateX(-40px)}
+.reveal.reveal-right{transform:translateX(40px)}
+.reveal.visible{opacity:1;transform:none}
+/* Hero loads instantly - no scroll needed */
+.hero-inner > div:first-child{animation:heroLeft 0.9s ease forwards}
+.hero-inner > div:last-child{animation:heroRight 0.9s ease 0.2s both}
+@keyframes heroLeft{from{opacity:0;transform:translateX(-40px)}to{opacity:1;transform:translateX(0)}}
+@keyframes heroRight{from{opacity:0;transform:translateX(40px)}to{opacity:1;transform:translateX(0)}}
 </style>
 </head>
 <body>
